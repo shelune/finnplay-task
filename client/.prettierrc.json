@@ -1,0 +1,9 @@
+{
+  "trailingComma": "all",
+  "overrides": [{
+    "files": "src/local/tracking.js",
+    "options": {
+      "trailingComma": "none"
+    }
+  }]
+}

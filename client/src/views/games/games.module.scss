@@ -1,0 +1,194 @@
+@import "../../styles/utils/all";
+
+.header {
+  @include shadow-main;
+  width: 100%;
+}
+
+.headerContainer {
+  @include page-container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  display: inline-flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+
+.username {
+  text-transform: capitalize;
+}
+
+.logout {
+  display: inline-flex;
+  align-items: center;
+  color: $red-error;
+
+  .logoutIcon {
+    display: inline-block;
+    margin-right: 8px;
+    transform: translateY(2px);
+  }
+
+  .logoutLink {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.content {
+  @include page-container;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  display: flex;
+  gap: 20px;
+}
+
+.gameList {
+  display: grid;
+  align-content: flex-start;
+  gap: 20px;
+  width: 66%;
+
+  &.isTwoColumn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.isThreeColumn {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.isFourColumn {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gameBox {
+  @include rounded-8;
+  background-size: cover;
+  background-position: center;
+  background-color: $blue-link;
+  height: 141px;
+}
+
+.gameFilters {
+  width: 33%;
+  padding: 32px;
+  @include rounded-8;
+  border: 1px solid $black-semi;
+
+  > div {
+    margin-bottom: 42px;
+  }
+}
+
+.searchBar {
+  display: block;
+  position: relative;
+}
+
+.textInput {
+  @include rounded-4;
+  width: 100%;
+  max-width: 100%;
+  padding: 22.5px 16px 22.5px;
+  border: 1px solid $black-semi;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+}
+
+.gameFiltersMobile {
+  display: none;
+
+  @include mobile() {
+    display: block;
+  }
+}
+
+.filterTitle {
+  color: $gray-semi;
+  margin-bottom: 15px;
+}
+
+.filterList {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px 40px;
+}
+
+.filterPill {
+  @include rounded-4;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    border: 1px solid $yellow;
+  }
+
+  &.isActive {
+    background-color: $yellow;
+  }
+}
+
+.filterBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .bar {
+    position: absolute;
+    height: 15px;
+    width: calc(100% - 16px);
+    top: 50%;
+    // shift 4px to the right so the bar fits in with the milestones
+    transform: translate(4px, -50%);
+  }
+
+  .barBackground {
+    height: 100%;
+    width: 100%;
+    background-color: $black-semi;
+    position: absolute;
+    z-index: -2;
+    top: 50%;
+    // shift 4px to the right so the bar fits in with the milestones
+    transform: translate(4px, -50%);
+  }
+
+  .barActive {
+    height: 100%;
+    width: 100%;
+    background-color: $yellow;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    // shift 4px to the right so the bar fits in with the milestones
+    transform: translate(4px, -50%);
+  }
+
+  .milestone {
+    @include rounded-full;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    background-color: $black-semi;
+    position: relative;
+    z-index: 2;
+
+    &.isActive {
+      background-color: $yellow;
+    }
+  }
+}

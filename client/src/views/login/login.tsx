@@ -9,10 +9,10 @@ import { ApiLoginResponse } from "../../utils/types";
 import css from "./login.module.scss";
 
 type Props = {
-  setIsAuth: (isAuth: boolean) => void;
+  setUser: (user: { username: string } | null) => void;
 };
 
-export const LoginView: FC<Props> = ({ setIsAuth }) => {
+export const LoginView: FC<Props> = ({ setUser }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isSending, setSending] = useState(false);
@@ -31,13 +31,12 @@ export const LoginView: FC<Props> = ({ setIsAuth }) => {
     );
     console.log({ response });
     if (response.message === ResponseMessages.LOGIN_SUCCESS) {
-      setIsAuth(true);
+      setUser(response.sessionUser);
     } else {
-      setIsAuth(false);
+      // setUser(null);
       setError(response.message);
     }
-    // return response;
-  }, [password, setIsAuth, username]);
+  }, [password, setUser, username]);
 
   return (
     <div className={css.loginPage}>
@@ -45,7 +44,14 @@ export const LoginView: FC<Props> = ({ setIsAuth }) => {
         <div className={css.logo}>
           <img src={Logo} alt="logo" />
         </div>
-        <form className={css.form}>
+        <form
+          className={css.form}
+          onSubmit={(e) => {
+            e.preventDefault();
+            // eslint-disable-next-line @typescript-eslint/no-floating-promises
+            login();
+          }}
+        >
           <div className={css.formControl}>
             <label
               htmlFor="username"
@@ -101,7 +107,7 @@ export const LoginView: FC<Props> = ({ setIsAuth }) => {
           {error && <div className={css.formHelper}>{error}</div>}
           <div className={css.formFunctions}>
             <button
-              type="button"
+              type="submit"
               className={css.submitButton}
               onClick={() => {
                 // eslint-disable-next-line @typescript-eslint/no-floating-promises

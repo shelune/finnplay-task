@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
 @import "./normalize.scss";
+@import "./utils/typography";
 
 html {
   box-sizing: border-box;
@@ -18,4 +19,5 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include text-body-regular;
 }

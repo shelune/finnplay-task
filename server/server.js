@@ -25,6 +25,7 @@ app.use(cors());
 app.use(express.static(path.join(rootDir, "..", clientPath, "index.html")));
 
 const usersList = require("./data/users");
+const gamesList = require("./data/games");
 
 const sessionOptions = {
   secret: process.env.SESSION_SECRET,
@@ -55,7 +56,9 @@ app.post("/login", async (req, res) => {
     req.session.user = {
       username,
     };
-    return res.status(200).json({ message: "login successful" });
+    return res
+      .status(200)
+      .json({ message: "login successful", sessionUser: { username } });
   } else {
     return res.status(401).json({ message: "incorrect username / password" });
   }
@@ -75,6 +78,16 @@ app.get("/isAuth", (req, res) => {
   const sessionUser = req.session.user;
   if (sessionUser) {
     return res.status(200).json({ message: "authenticated", sessionUser });
+  }
+  return res.status(401).json({ message: "unauthorized" });
+});
+
+app.get("/games", (req, res) => {
+  const sessionUser = req.session.user;
+  if (sessionUser) {
+    return res
+      .status(200)
+      .json({ message: "fetch successful", data: gamesList });
   }
   return res.status(401).json({ message: "unauthorized" });
 });

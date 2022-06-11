@@ -1,29 +1,36 @@
 import React, { useEffect, useState } from "react";
 
 import { request } from "./utils/client";
-import { GamesView } from "./views/games/games";
+import { ApiLoginResponse } from "./utils/types";
+import { GamesView } from "./views/games";
 import { LoginView } from "./views/login/login";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false);
+  const [user, setUser] = useState<{ username: string } | null>();
 
   useEffect(() => {
     async function checkIsAuth() {
-      const response = await request("isAuth", "GET", {}, null);
+      const response = await request<ApiLoginResponse>(
+        "isAuth",
+        "GET",
+        {},
+        null,
+      );
       if (response.sessionUser) {
-        setIsAuth(true);
+        setUser(response.sessionUser);
       }
     }
 
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
     checkIsAuth();
   }, []);
+
   return (
     <div className="App">
-      {!isAuth ? (
-        <LoginView setIsAuth={setIsAuth} />
+      {!user ? (
+        <LoginView setUser={setUser} />
       ) : (
-        <GamesView setIsAuth={setIsAuth} />
+        <GamesView username={user.username} setUser={setUser} />
       )}
     </div>
   );

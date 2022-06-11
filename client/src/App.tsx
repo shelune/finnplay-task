@@ -1,34 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useEffect, useState } from "react";
 
 import { request } from "./utils/client";
-import { ResponseMessages } from "./utils/messages";
-import { LoginView } from "./views/login";
+import { GamesView } from "./views/games/games";
+import { LoginView } from "./views/login/login";
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
-  const login = useCallback(async () => {
-    const response = await request(
-      "login",
-      "POST",
-      {},
-      {
-        username: "player1",
-        password: "player1",
-      },
-    );
-    if (response.message === ResponseMessages.LOGIN_SUCCESS) {
-      setIsAuth(true);
-    }
-    return response;
-  }, []);
-
-  const logout = useCallback(async () => {
-    const response = await request("logout", "DELETE", {}, {});
-    setIsAuth(false);
-    return response;
-  }, []);
 
   useEffect(() => {
     async function checkIsAuth() {
@@ -43,7 +20,11 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <LoginView />
+      {!isAuth ? (
+        <LoginView setIsAuth={setIsAuth} />
+      ) : (
+        <GamesView setIsAuth={setIsAuth} />
+      )}
     </div>
   );
 }

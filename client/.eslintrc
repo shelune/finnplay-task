@@ -75,7 +75,17 @@
         "format": ["camelCase", "snake_case", "PascalCase", "UPPER_CASE"]
       }
     ],
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "jsx-a11y/label-has-associated-control": ["error", {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }],
+    "jsx-a11y/label-has-for": ["error", {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }]
   },
   "overrides": [{
     "files": [

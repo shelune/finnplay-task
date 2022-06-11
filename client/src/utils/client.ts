@@ -1,3 +1,5 @@
+import { BaseApiResponse } from "./types";
+
 const defaultconfig: Partial<RequestInit> = {
   credentials: "same-origin",
   headers: {
@@ -18,8 +20,8 @@ export async function request<T = Record<string, unknown>>(
     body: method === "GET" ? undefined : JSON.stringify(data),
   });
 
-  if (response.status >= 200 && response.status < 400) {
-    return response.json().catch(() => null) as Promise<T>;
+  if (response.status >= 200) {
+    return response.json() as Promise<T>;
   }
 
   throw new Error("Request failed");

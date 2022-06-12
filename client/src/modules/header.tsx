@@ -1,6 +1,4 @@
-import classNames from "classnames";
-import React, { FC, useCallback, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { FC, useCallback } from "react";
 
 import { request } from "../utils/client";
 import css from "./header.module.scss";
@@ -13,12 +11,9 @@ type Props = {
 };
 
 export const Header: FC<Props> = ({ setUser, username }) => {
-  const navigate = useNavigate();
   const logout = useCallback(async () => {
     await request("logout", "DELETE", {}, {});
-    setUser(null);
-    navigate("/");
-  }, [navigate, setUser]);
+  }, []);
 
   return (
     <div className={css.header}>
@@ -37,6 +32,7 @@ export const Header: FC<Props> = ({ setUser, username }) => {
                 e.preventDefault();
                 // eslint-disable-next-line @typescript-eslint/no-floating-promises
                 logout();
+                setUser(null);
               }}
             >
               Logout

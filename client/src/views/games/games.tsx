@@ -1,11 +1,8 @@
 import classNames from "classnames";
 import React, { FC, useCallback, useMemo, useState } from "react";
 
-import Logo from "../../assets/images/logo.png";
-import { ReactComponent as ProfileIcon } from "../../assets/icons/profile.svg";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
 import { ReactComponent as HamburgerIcon } from "../../assets/icons/hamburger.svg";
-import { request } from "../../utils/client";
 import css from "./games.module.scss";
 import { LocalGame, LocalGameGroup, LocalProvider } from "../../utils/types";
 
@@ -26,8 +23,6 @@ export const GamesView: FC<Props> = ({ games, providers, groups }) => {
   const [sorting, setSorting] = useState<SortingType>("A-Z");
   const [columnCount, setColumnCount] = useState(4);
   const [showFilters, setShowFilters] = useState(false);
-
-  console.log({ activeProviders });
 
   const filteredGames = useMemo(() => {
     const filtered = games
@@ -220,6 +215,7 @@ export const GamesView: FC<Props> = ({ games, providers, groups }) => {
               <div
                 data-testid="game-box"
                 key={item.id}
+                title={item.name}
                 className={css.gameBox}
                 style={{
                   backgroundImage: `url(${item.cover})`,

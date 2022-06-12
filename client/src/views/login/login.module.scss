@@ -67,6 +67,9 @@
 .formFunctions {
   margin-top: 40px;
 }
+.formError {
+  color: $red-error;
+}
 
 .submitButton {
   @include text-body-regular;

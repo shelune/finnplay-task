@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <div
+      class="headerContainer"
+    >
+      <div
+        class="logo"
+      >
+        <img
+          alt="logo"
+          src="logo.png"
+        />
+      </div>
+      <div
+        class="user"
+      >
+        <div
+          class="username"
+        >
+          player1
+        </div>
+        <div
+          class="logout"
+        >
+          <svg
+            class="logoutIcon"
+          >
+            profile.svg
+          </svg>
+          <a
+            class="logoutLink"
+            href="#0"
+          >
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

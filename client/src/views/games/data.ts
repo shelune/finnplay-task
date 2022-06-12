@@ -1,4 +1,4 @@
-import { ComponentProps, useCallback, useEffect, useState } from "react";
+import { ComponentProps, useEffect, useState } from "react";
 import {
   ApiGame,
   ApiGamesResponse,

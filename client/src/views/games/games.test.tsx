@@ -74,7 +74,7 @@ describe("GamesView", () => {
   });
 
   it("should accept multiple filters of the same category", () => {
-    const { getByTestId, getByText, getAllByTestId } = render(
+    const { getByText, getAllByTestId } = render(
       <GamesView
         games={mockGames}
         providers={mockProviders}
@@ -91,5 +91,20 @@ describe("GamesView", () => {
       providerButton2.click();
     });
     expect(getAllByTestId("game-box")).toHaveLength(11);
+  });
+
+  it("should sort games properly", () => {
+    const { getByText, getAllByTestId } = render(
+      <GamesView
+        games={mockGames}
+        providers={mockProviders}
+        groups={mockGameGroups}
+      />,
+    );
+    act(() => {
+      const sortButton = getByText("Z-A");
+      sortButton.click();
+    });
+    expect(getAllByTestId("game-box")[0]).toHaveAttribute("title", "Zentaurus");
   });
 });

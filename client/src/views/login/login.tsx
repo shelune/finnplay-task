@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import React, { FC, useCallback, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 import Logo from "../../assets/images/logo.png";
 import { ReactComponent as EyeIcon } from "../../assets/icons/show-password.svg";
+import { ReactComponent as SpinnerIcon } from "../../assets/icons/spinner.svg";
 import { request } from "../../utils/client";
 import { ResponseMessages } from "../../utils/messages";
 import { ApiLoginResponse } from "../../utils/types";
@@ -16,11 +16,12 @@ type Props = {
 export const LoginView: FC<Props> = ({ setUser }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isSending, setSending] = useState(false);
+  const [isSubmitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   const login = useCallback(async () => {
+    setSubmitting(true);
     const response = await request<ApiLoginResponse>(
       "login",
       "POST",
@@ -30,7 +31,8 @@ export const LoginView: FC<Props> = ({ setUser }) => {
         password,
       },
     );
-    console.log({ response });
+
+    setSubmitting(false);
     if (response.message === ResponseMessages.LOGIN_SUCCESS) {
       setUser(response.sessionUser);
     } else {
@@ -105,7 +107,7 @@ export const LoginView: FC<Props> = ({ setUser }) => {
               <EyeIcon />
             </span>
           </div>
-          {error && <div className={css.formHelper}>{error}</div>}
+          {error && <div className={css.formError}>{error}</div>}
           <div className={css.formFunctions}>
             <button
               type="submit"
@@ -115,7 +117,7 @@ export const LoginView: FC<Props> = ({ setUser }) => {
                 login();
               }}
             >
-              Log in
+              {isSubmitting ? <SpinnerIcon /> : "Log in"}
             </button>
           </div>
         </form>

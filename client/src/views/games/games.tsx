@@ -27,6 +27,8 @@ export const GamesView: FC<Props> = ({ games, providers, groups }) => {
   const [columnCount, setColumnCount] = useState(4);
   const [showFilters, setShowFilters] = useState(false);
 
+  console.log({ activeProviders });
+
   const filteredGames = useMemo(() => {
     const filtered = games
       .filter((game) => {
@@ -208,6 +210,7 @@ export const GamesView: FC<Props> = ({ games, providers, groups }) => {
         </div>
         {filteredGames.length ? (
           <div
+            data-testid="game-list"
             className={classNames(css.gameList)}
             style={{
               gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
@@ -215,6 +218,7 @@ export const GamesView: FC<Props> = ({ games, providers, groups }) => {
           >
             {filteredGames.map((item) => (
               <div
+                data-testid="game-box"
                 key={item.id}
                 className={css.gameBox}
                 style={{
@@ -230,6 +234,7 @@ export const GamesView: FC<Props> = ({ games, providers, groups }) => {
           <div className={css.filterBySearch}>
             <div className={css.searchBar}>
               <input
+                data-testid="game-search-text"
                 type="text"
                 className={css.textInput}
                 value={search}

@@ -47,426 +47,532 @@ exports[`GamesView should render 1`] = `
       </div>
       <div
         class="gameList"
+        data-testid="game-list"
         style="grid-template-columns: repeat(4, 1fr);"
       >
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GA3Kings.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GA4Symbols.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GT40SurpremeFruits.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/CA88Riches.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAAfricanSunset.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTAmazingStars.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAAncientGong.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTApolloGodOfTheSun10WW.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAAtlantisWorld.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_Blackjack.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookOfRaClassicLVC.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookofRadeluxe10.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookofRaDeluxe6.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookofRaTempleofGold.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-83/NCBookofShadows.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GABurningFlame.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACaligula.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CandyBonanza.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CaptainsBounty.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACastleBlood.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAChineseZodiac.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CircusDelight.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACleopatraJewels.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_Cocktailbook.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_CocktailNights.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CryptoGold.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACrystalMystery.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GADancingLion.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GADaVinciCodex.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_DiamondJackpots.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_DragonHatch.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GADragonLady.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_DreamsofMacau.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_EgyptBookMystery.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_ElAndaluz.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAElToreo.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_EmojiRiches.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAEmperorsWealth.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAExplosiveReels.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_ExtraWinX.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFiveStarLuxury.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERFlamesOfEgypt.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFlamingReels.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFortuneLions.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFortunePanda.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_FruitFever.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAGoldOfRa.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_GoldenBuffalo.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAGoldenDragon.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_GoldenPig.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERHocusPocusDeluxe.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-83/NCIceIceYeti.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAJadeTreasure.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAJoanOfArc.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAJumpinPot.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTKatana.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_KingKongCashpotsJK.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKingOfMonkeys.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKingOfMonkeys2.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKingOfWealth.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKittyTwins.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GALadyLuck.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_Leokan.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GALuckyBabies.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_LuckyNeko.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_LuckyNeko.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAMagicUnicorn.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_MajesticTreasures.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_MaskCarnival.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTMegaJoker.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAMoneyFarm.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAMoreCash.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GANightAtKTV.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_OrientalProsperity.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAPhoenixPrincess.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_QueenofBounty.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GARamsesTreasure.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_RickAndMortyMegaways.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GARoyalGems.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GASantaSFarm.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_SeaGod.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_SinbadsOdyssey.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GASlotOfMoney.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GASpartansLegacy.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERSpiritsOfTheEast.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAStarCash.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_StarStretch.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAStormingFlame.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_SushiOishi.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GATexasRangersReward.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAThunderBird.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERTizona.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_TokyoDragon.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_TreasuresofAztec.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERTripleFlame.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERTropicalHeat.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-30/endTwerk.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-30/endVoodoo.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERVoodooShark.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_WildBandito.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_WildFireworks.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERWildSupreme.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_WishUponAJackpot.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAWolfQuest.jpg);"
         />
         <div
           class="gameBox"
+          data-testid="game-box"
           style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERZentaurus.jpg);"
         />
       </div>
@@ -481,6 +587,7 @@ exports[`GamesView should render 1`] = `
           >
             <input
               class="textInput"
+              data-testid="game-search-text"
               placeholder="Search"
               type="text"
               value=""
@@ -708,5 +815,548 @@ exports[`GamesView should render 1`] = `
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`GamesView should render empty message if no matching game found 1`] = `
+<div
+  class="gameList"
+  style=""
+>
+  Sorry, no matching game found.
+</div>
+`;
+
+exports[`GamesView should render games based on columns selected 1`] = `
+<div
+  class="gameList"
+  data-testid="game-list"
+  style="grid-template-columns: repeat(3, 1fr);"
+>
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GA3Kings.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GA4Symbols.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GT40SurpremeFruits.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/CA88Riches.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAAfricanSunset.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTAmazingStars.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAAncientGong.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTApolloGodOfTheSun10WW.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAAtlantisWorld.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_Blackjack.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookOfRaClassicLVC.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookofRadeluxe10.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookofRaDeluxe6.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTBookofRaTempleofGold.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-83/NCBookofShadows.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GABurningFlame.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACaligula.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CandyBonanza.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CaptainsBounty.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACastleBlood.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAChineseZodiac.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CircusDelight.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACleopatraJewels.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_Cocktailbook.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_CocktailNights.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_CryptoGold.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GACrystalMystery.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GADancingLion.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GADaVinciCodex.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_DiamondJackpots.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_DragonHatch.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GADragonLady.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_DreamsofMacau.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_EgyptBookMystery.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_ElAndaluz.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAElToreo.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_EmojiRiches.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAEmperorsWealth.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAExplosiveReels.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_ExtraWinX.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFiveStarLuxury.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERFlamesOfEgypt.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFlamingReels.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFortuneLions.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAFortunePanda.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_FruitFever.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAGoldOfRa.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_GoldenBuffalo.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAGoldenDragon.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_GoldenPig.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERHocusPocusDeluxe.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-83/NCIceIceYeti.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAJadeTreasure.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAJoanOfArc.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAJumpinPot.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTKatana.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_KingKongCashpotsJK.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKingOfMonkeys.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKingOfMonkeys2.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKingOfWealth.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAKittyTwins.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GALadyLuck.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_Leokan.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GALuckyBabies.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_LuckyNeko.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_LuckyNeko.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAMagicUnicorn.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_MajesticTreasures.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_MaskCarnival.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-7/GTMegaJoker.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAMoneyFarm.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAMoreCash.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GANightAtKTV.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_OrientalProsperity.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAPhoenixPrincess.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_QueenofBounty.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GARamsesTreasure.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_RickAndMortyMegaways.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GARoyalGems.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GASantaSFarm.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_SeaGod.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_SinbadsOdyssey.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GASlotOfMoney.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GASpartansLegacy.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERSpiritsOfTheEast.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAStarCash.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_StarStretch.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAStormingFlame.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_SushiOishi.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GATexasRangersReward.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAThunderBird.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERTizona.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id--3/SWI_TokyoDragon.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_TreasuresofAztec.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERTripleFlame.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERTropicalHeat.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-30/endTwerk.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-30/endVoodoo.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERVoodooShark.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-101/RG_PG_WildBandito.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-1/MG_PG_WildFireworks.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERWildSupreme.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-97/BL_WishUponAJackpot.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-37/GAWolfQuest.jpg);"
+  />
+  <div
+    class="gameBox"
+    data-testid="game-box"
+    style="background-image: url(https://1540257937.rsc.cdn77.org/desktop/images/games/provider-id-93/MERZentaurus.jpg);"
+  />
 </div>
 `;

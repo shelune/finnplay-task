@@ -1,0 +1,41 @@
+@import "../styles/utils/all";
+
+.header {
+  @include shadow-main;
+  width: 100%;
+}
+
+.headerContainer {
+  @include page-container;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  display: inline-flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+
+.username {
+  text-transform: capitalize;
+}
+
+.logout {
+  display: inline-flex;
+  align-items: center;
+  color: $red-error;
+
+  .logoutIcon {
+    display: inline-block;
+    margin-right: 8px;
+    transform: translateY(2px);
+  }
+
+  .logoutLink {
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React, { FC, useCallback, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Logo from "../../assets/images/logo.png";
 import { ReactComponent as EyeIcon } from "../../assets/icons/show-password.svg";
@@ -34,7 +35,7 @@ export const LoginView: FC<Props> = ({ setUser }) => {
       setUser(response.sessionUser);
     } else {
       // setUser(null);
-      setError(response.message);
+      setError(response.message || "Something went wrong");
     }
   }, [password, setUser, username]);
 

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Header } from "./modules/header";
 
 import { request } from "./utils/client";
 import { ApiLoginResponse } from "./utils/types";
@@ -30,7 +32,12 @@ function App() {
       {!user ? (
         <LoginView setUser={setUser} />
       ) : (
-        <GamesView username={user.username} setUser={setUser} />
+        <BrowserRouter>
+          <Header username={user.username} setUser={setUser} />
+          <Routes>
+            <Route path="/" element={<GamesView />} />
+          </Routes>
+        </BrowserRouter>
       )}
     </div>
   );

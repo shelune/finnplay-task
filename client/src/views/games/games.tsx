@@ -4,13 +4,12 @@ import React, { FC, useCallback, useMemo, useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import { ReactComponent as ProfileIcon } from "../../assets/icons/profile.svg";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
+import { ReactComponent as HamburgerIcon } from "../../assets/icons/hamburger.svg";
 import { request } from "../../utils/client";
 import css from "./games.module.scss";
 import { LocalGame, LocalGameGroup, LocalProvider } from "../../utils/types";
 
 type Props = {
-  setUser: (user: { username: string } | null) => void;
-  username: string;
   games: LocalGame[];
   providers: LocalProvider[];
   groups: LocalGameGroup[];
@@ -20,18 +19,13 @@ type SortingType = "A-Z" | "Z-A" | "Newest";
 
 const COLUMN_OPTIONS = [2, 3, 4];
 
-export const GamesView: FC<Props> = ({
-  setUser,
-  username,
-  games,
-  providers,
-  groups,
-}) => {
+export const GamesView: FC<Props> = ({ games, providers, groups }) => {
   const [search, setSearch] = useState("");
-  const [activeProviders, setActiveProviders] = useState<number[]>([1]);
-  const [activeGroups, setActiveGroups] = useState<number[]>([1]);
+  const [activeProviders, setActiveProviders] = useState<number[]>([]);
+  const [activeGroups, setActiveGroups] = useState<number[]>([]);
   const [sorting, setSorting] = useState<SortingType>("A-Z");
   const [columnCount, setColumnCount] = useState(4);
+  const [showFilters, setShowFilters] = useState(false);
 
   const filteredGames = useMemo(() => {
     const filtered = games
@@ -75,39 +69,143 @@ export const GamesView: FC<Props> = ({
     return filteredSort;
   }, [activeGroups, activeProviders, games, groups, search, sorting]);
 
-  const logout = useCallback(async () => {
-    await request("logout", "DELETE", {}, {});
-    setUser(null);
-  }, [setUser]);
+  const resetFilters = useCallback(() => {
+    setSearch("");
+    setActiveProviders([]);
+    setActiveGroups([]);
+    setSorting("A-Z");
+    setColumnCount(4);
+  }, []);
 
   return (
     <div className={css.gamesPage}>
-      <div className={css.header}>
-        <div className={css.headerContainer}>
-          <div className={css.logo}>
-            <img src={Logo} alt="logo" />
-          </div>
-          <div className={css.user}>
-            <div className={css.username}>{username}</div>
-            <div className={css.logout}>
-              <ProfileIcon className={css.logoutIcon} />
-              <a
-                href="#0"
-                className={css.logoutLink}
-                onClick={(e) => {
-                  e.preventDefault();
-                  // eslint-disable-next-line @typescript-eslint/no-floating-promises
-                  logout();
-                }}
-              >
-                Logout
-              </a>
+      <div className={css.content}>
+        <div
+          className={classNames(css.gameFiltersMobile, {
+            [css.isShowingFilters]: showFilters,
+          })}
+        >
+          <div className={css.filterBySearch}>
+            <div className={css.searchBar}>
+              <input
+                type="text"
+                className={css.textInput}
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search"
+              />
+              <SearchIcon className={css.searchIcon} />
             </div>
           </div>
+          {showFilters && (
+            <>
+              <div className={css.filterByProviders}>
+                <div className={css.filterTitle}>Providers</div>
+                <div className={css.filterList}>
+                  {providers.map((provider) => (
+                    <span
+                      key={provider.id}
+                      className={classNames(css.filterPill, {
+                        [css.isActive]: activeProviders.includes(provider.id),
+                      })}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={() => {}}
+                      onClick={() => {
+                        if (activeProviders.includes(provider.id)) {
+                          setActiveProviders(
+                            activeProviders.filter(
+                              (item) => item !== provider.id,
+                            ),
+                          );
+                        } else {
+                          setActiveProviders([...activeProviders, provider.id]);
+                        }
+                      }}
+                    >
+                      {provider.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className={css.filterByGroups}>
+                <div className={css.filterTitle}>Game groups</div>
+                <div className={css.filterList}>
+                  {groups.map((group) => (
+                    <span
+                      key={group.id}
+                      className={classNames(css.filterPill, {
+                        [css.isActive]: activeGroups.includes(group.id),
+                      })}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={() => {}}
+                      onClick={() => {
+                        if (activeGroups.includes(group.id)) {
+                          setActiveGroups(
+                            activeGroups.filter((item) => item !== group.id),
+                          );
+                        } else {
+                          setActiveGroups([...activeGroups, group.id]);
+                        }
+                      }}
+                    >
+                      {group.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className={css.sorting}>
+                <div className={css.filterTitle}>Sorting</div>
+                <div className={css.filterList}>
+                  {["A-Z", "Z-A", "Newest"].map((item) => (
+                    <span
+                      key={item}
+                      className={classNames(css.filterPill, {
+                        [css.isActive]: sorting === item,
+                      })}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={() => {}}
+                      onClick={() => {
+                        if (sorting !== item) {
+                          setSorting(item as SortingType);
+                        }
+                      }}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className={css.byline}>
+                <div className={css.gamesCount}>
+                  Game amount:
+                  <span>{` ${filteredGames.length}`}</span>
+                </div>
+                <button
+                  type="button"
+                  className={css.resetFilters}
+                  onClick={() => {
+                    resetFilters();
+                  }}
+                >
+                  Reset
+                </button>
+              </div>
+            </>
+          )}
+          <div
+            className={css.toggleFilters}
+            role="button"
+            tabIndex={0}
+            onKeyDown={() => {}}
+            onClick={() => setShowFilters(!showFilters)}
+          >
+            <HamburgerIcon className={css.toggleFiltersIcon} />
+            <span>{showFilters ? "Hide filters" : "Show filters"}</span>
+          </div>
         </div>
-      </div>
-      <div className={css.content}>
-        <div className={css.gameFiltersMobile}>Mobile filtering</div>
         {filteredGames.length ? (
           <div
             className={classNames(css.gameList)}
@@ -258,10 +356,18 @@ export const GamesView: FC<Props> = ({
           </div>
           <div className={css.byline}>
             <div className={css.gamesCount}>
-              Game count:
-              <span>{filteredGames.length}</span>
+              Game amount:
+              <span>{` ${filteredGames.length}`}</span>
             </div>
-            <div className={css.resetFilters}>Reset</div>
+            <button
+              type="button"
+              className={css.resetFilters}
+              onClick={() => {
+                resetFilters();
+              }}
+            >
+              Reset
+            </button>
           </div>
         </div>
       </div>

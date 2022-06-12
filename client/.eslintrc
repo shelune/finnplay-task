@@ -6,11 +6,11 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:react-hooks/recommended",
     "prettier",
-    "prettier/@typescript-eslint"
-    // "plugin:jest/recommended",
-    // "plugin:jest/style",
-    // "plugin:testing-library/react",
-    // "plugin:jest-dom/recommended"
+    "prettier/@typescript-eslint",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
   ],
   "plugins": [
     "jest",

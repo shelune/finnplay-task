@@ -14,7 +14,11 @@
   box-shadow: 0px -2px 18px rgba(128, 128, 128, 0.1);
 }
 
+@mixin shadow-shallow {
+  box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.06);
+}
+
 @mixin page-container {
-  max-width: 1296px;
+  max-width: 1344px;
   margin: 0 auto;
 }

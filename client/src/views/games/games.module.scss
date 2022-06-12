@@ -45,6 +45,8 @@
   padding: 75px 24px;
   display: flex;
   gap: 20px;
+  // this enables sticky cuz css grid works a bit differently
+  align-items: start;
 
   @include mobile() {
     display: block;
@@ -57,6 +59,8 @@
   align-content: flex-start;
   gap: 20px;
   width: 66%;
+  position: sticky;
+  top: 0;
 
   @include mobile() {
     width: 100%;

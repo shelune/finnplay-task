@@ -20,9 +20,10 @@ app.use(
 );
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static(path.join(rootDir, "../client/build")));
 
 // Serve static resources from the "public" folder (ex: when there are images to display)
-app.use(express.static(path.join(rootDir, "..", clientPath, "index.html")));
+app.use(express.static(path.join(rootDir, "..", "client", "build")));
 
 const usersList = require("./data/users");
 const gamesList = require("./data/games");
@@ -90,6 +91,10 @@ app.get("/games", (req, res) => {
       .json({ message: "fetch successful", data: gamesList });
   }
   return res.status(401).json({ message: "unauthorized" });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(rootDir, "..", "client", "build", "index.html"));
 });
 
 app.listen(PORT, () => {

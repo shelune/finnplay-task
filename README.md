@@ -1,3 +1,6 @@
+# Install
+- Run `npm i` in both `/client` and `/server`
+
 # Run in development mode
 
 - Open a terminal in `/client` folder and run `npm run start` (or if port `3001` is occupied, change the port number in `package.json` script. Default port is `3001`)

@@ -46,7 +46,7 @@
   display: flex;
   gap: 20px;
   // this enables sticky cuz css grid works a bit differently
-  align-items: start;
+  align-items: flex-start;
 
   @include mobile() {
     display: block;

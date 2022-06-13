@@ -1,5 +1,7 @@
 # Install
+
 - Run `npm i` in both `/client` and `/server`
+- In `/server` create a `.env` file and fill in `SESSION_SECRET=[random string]` like in `.sample_env` so the user session can work.
 
 # Run in development mode
 

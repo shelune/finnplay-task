@@ -9,8 +9,6 @@ const path = require("path");
 const rootDir = require("./utils/path");
 const clientPath = "./client/build";
 
-// console.log(rootDir);
-
 const PORT = process.env.PORT || 3333;
 const app = express();
 app.use(
@@ -44,11 +42,6 @@ app.post("/login", async (req, res) => {
   if (!username || !password) {
     return res.status(401).json({ message: "missing username / password" });
   }
-  console.log(
-    usersList.find(
-      (user) => user.username === username && user.password === password
-    )
-  );
   if (
     usersList.find(
       (user) => user.username === username && user.password === password

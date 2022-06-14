@@ -62,7 +62,7 @@
   position: sticky;
   top: 0;
 
-  @include mobile() {
+  @include tablet() {
     width: 100%;
     // override `style` in markup
     grid-template-columns: repeat(2, 1fr) !important;
